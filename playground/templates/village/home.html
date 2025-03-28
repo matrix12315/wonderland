@@ -168,7 +168,7 @@
         el: '#msg',
         data: {
             parent: "phaser-canvas",
-            assets_root: "{% static '' %}",
+            assets_root: "{% static '' %}".replace(/\/$/, ""),
             urls: {
                 start_game: "{% url 'start_game' %}",
                 agent_think: "{% url 'agent_think' %}",
